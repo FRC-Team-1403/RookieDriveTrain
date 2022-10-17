@@ -20,6 +20,10 @@ public final class Constants {
     public static int driveTrainBackLeftID = 2;
     public static int driveTrainBackRightID = 7;
 
+    // Whether motors are inverted or not
+    public static boolean driveTrainLeftInverted = true;
+    public static boolean driveTrainRightInverted = false;
+
     // Scaling factor for purposes of testing & saftey
     public static double scalingFactorDrivetrain = 0.3;
 

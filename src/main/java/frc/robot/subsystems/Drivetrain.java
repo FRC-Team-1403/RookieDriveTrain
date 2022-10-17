@@ -28,7 +28,13 @@ public class Drivetrain extends SubsystemBase {
 
         // Make back motors follow the instructions set to the front motors
         m_backRight.follow(frontRight);
-        m_backLeft.follow(frontLeft);
+        m_backLeft.follow(frontLeft);  
+        
+        // Set inversion of motors
+        m_frontLeft.setInverted(Constants.driveTrainLeftInverted);
+        m_backLeft.setInverted(Constants.driveTrainLeftInverted);
+        m_frontRight.setInverted(Constants.driveTrainRightInverted);
+        m_backRight.setInverted(Constants.driveTrainRightInverted);
     }
 
     /**
