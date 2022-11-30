@@ -42,7 +42,7 @@ public class Drivetrain extends SubsystemBase {
      * @param speed speed to set right motors (goes from -1 to 1)
      */
     public void setRightMotors(double speed) {
-        m_frontRight.set(TalonSRXControlMode.PercentOutput, speed * Constants.scalingFactorDrivetrain);
+        m_frontRight.set(TalonSRXControlMode.PercentOutput, speed * Constants.scalingFactorRightDrivetrain);
     }
 
     /**
@@ -50,7 +50,7 @@ public class Drivetrain extends SubsystemBase {
      * @param speed speed to set left motors (goes from -1 to 1)
      */
     public void setLeftMotors(double speed) {
-        m_frontLeft.set(TalonSRXControlMode.PercentOutput, speed * Constants.scalingFactorDrivetrain);
+        m_frontLeft.set(TalonSRXControlMode.PercentOutput, speed * Constants.scalingFactorLeftDrivetrain);
     }
 
     /**

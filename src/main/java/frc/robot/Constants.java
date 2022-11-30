@@ -15,17 +15,18 @@ package frc.robot;
 public final class Constants {
 
     // Change ID's to fit your robot
-    public static int driveTrainFrontLeftID = 8;
+    public static int driveTrainFrontLeftID = 2;
     public static int driveTrainFrontRightID = 6;
-    public static int driveTrainBackLeftID = 2;
-    public static int driveTrainBackRightID = 7;
+    public static int driveTrainBackLeftID = 0;
+    public static int driveTrainBackRightID = 5;
 
     // Whether motors are inverted or not
-    public static boolean driveTrainLeftInverted = true;
-    public static boolean driveTrainRightInverted = false;
+    public static boolean driveTrainLeftInverted = false;
+    public static boolean driveTrainRightInverted = true;
 
     // Scaling factor for purposes of testing & saftey
-    public static double scalingFactorDrivetrain = 0.3;
+    public static double scalingFactorLeftDrivetrain = 0.3;
+    public static double scalingFactorRightDrivetrain = 0.5;
 
     // Change to fit port of Controller
     public static int XBoxControllerPort = 0;
